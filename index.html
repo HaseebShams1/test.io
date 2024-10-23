@@ -33,6 +33,24 @@
             font-size: 0.8em;
             color: #777;
         }
+        /* Button Styles */
+        .no-button {
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.5em;
+            color: white;
+            background-color: #ff4d4d;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.3s ease;
+        }
+        .no-button:hover {
+            position: absolute;
+            top: calc(50% - 50px + (Math.random() * 100 - 50))px; /* Random vertical movement */
+            left: calc(50% - 75px + (Math.random() * 100 - 50))px; /* Random horizontal movement */
+        }
     </style>
 </head>
 <body>
@@ -43,9 +61,20 @@
     </div>
     <p>You make my life brighter every day!</p>
     <p>Can't wait to celebrate together!</p>
+    <button class="no-button" id="noButton">No</button>
     <div class="footer">
         <p>With all my love,</p>
         <p>[Your Name]</p>
     </div>
+
+    <script>
+        const noButton = document.getElementById('noButton');
+        
+        noButton.addEventListener('mouseover', () => {
+            const randomX = Math.random() * 100 - 50; // Random horizontal movement
+            const randomY = Math.random() * 100 - 50; // Random vertical movement
+            noButton.style.transform = `translate(${randomX}px, ${randomY}px)`;
+        });
+    </script>
 </body>
 </html>
