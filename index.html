@@ -3,30 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday</title>
+    <title>Happy Birthday Zahra!</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <input type="text" id="nameInput" placeholder="Enter your name" oninput="updateGreeting()" />
-        <h1 id="greeting">Happy Birthday!</h1>
-        
-        <p id="specialMessage">Today is your special day, and I can’t wait to celebrate with you!</p>
-        
+    <div class="galaxy-background">
+        <!-- Stars message -->
+        <h1 id="starMessage">Happy Birthday, Zahra!</h1>
         <!-- Buttons -->
         <div class="buttons">
             <button id="yes-btn" onclick="goToSurprisePage()">Yes</button>
-            <button id="no-btn">No</button>
         </div>
-
-        <!-- Interactive Slideshow -->
-        <div class="slideshow">
-            <img id="slideImg" src="images/photo1.jpg" alt="Memories together">
-            <div id="caption">Our First Adventure</div>
-        </div>
-        
-        <audio id="backgroundMusic" src="audio/birthday-song.mp3" autoplay loop></audio>
-
     </div>
     <script src="script.js"></script>
 </body>
