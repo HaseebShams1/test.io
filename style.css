@@ -96,12 +96,18 @@ button {
     width: 8px;
     height: 8px;
     top: -10px;
-    animation: fall 5s linear infinite;
     border-radius: 50%;
+    opacity: 0.8;
+    animation: confettiFall 4s linear infinite, confettiRotate 2s ease-in-out infinite;
 }
 
-@keyframes fall {
-    to {
-        transform: translateY(100vh) rotate(720deg);
-    }
+@keyframes confettiFall {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(720deg); }
 }
+
+@keyframes confettiRotate {
+    0%, 100% { transform: scale(1) rotate(0); }
+    50% { transform: scale(1.5) rotate(180deg); }
+}
+
