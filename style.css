@@ -16,20 +16,20 @@ body, html {
     text-align: center;
 }
 
-/* LED text effect */
+/* LED text effect with matte pink */
 #led-text {
     font-size: 3rem;
-    color: #ff0000;
-    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    color: #d5006d; /* Matte pink color */
+    text-shadow: 0 0 5px #d5006d, 0 0 10px #d5006d, 0 0 15px #ff6f91; /* Slightly brighter shadow for effect */
     animation: led-animation 1s infinite alternate;
 }
 
 @keyframes led-animation {
     from {
-        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+        text-shadow: 0 0 5px #d5006d, 0 0 10px #d5006d, 0 0 20px #d5006d;
     }
     to {
-        text-shadow: 0 0 5px #ff3333, 0 0 15px #ff3333, 0 0 30px #ff3333;
+        text-shadow: 0 0 5px #ff6f91, 0 0 15px #ff6f91, 0 0 30px #ff6f91; /* Brighten effect */
     }
 }
 
