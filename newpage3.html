@@ -12,24 +12,58 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-image: url('img1.png'), url('img2.png'), url('img3.png'), url('img4.png'), url('img5.png'), 
-                              url('img6.png'), url('img8.png'), url('img19.png'), url('img20.png'),
-                              url('img21.png'), url('img22.png'), url('img23.png'), url('img24.png'), url('img25.png'),
-                              url('img26.png'), url('img27.png'), url('img28.png'), url('img29.png'), url('img30.png'),
-                              url('img37.png');
-            background-size: cover; /* Scale background images to cover the entire viewport */
-            background-repeat: no-repeat; /* Prevent images from repeating */
+            background-color: #f8f8f8; /* Fallback color */
+            overflow: hidden; /* Prevent scrollbars */
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* Change this number for more/less images in a row */
+            grid-template-rows: repeat(5, 1fr); /* Adjust according to your number of images */
+            background-size: cover; /* Scale background images */
+        }
+        .background img {
+            width: 100%; /* Make images cover the grid cell */
+            height: auto; /* Maintain aspect ratio */
+            object-fit: cover; /* Ensure images fit well */
         }
         .message {
-            position: absolute; /* Position message on top */
+            position: relative; /* Position message above the background */
             color: white;
             text-align: center;
             font-size: 2rem;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
+            z-index: 1; /* Ensure message is on top */
         }
     </style>
 </head>
 <body>
+    <div class="background">
+        <img src="image1.png" alt="Image 1">
+        <img src="image2.png" alt="Image 2">
+        <img src="image3.png" alt="Image 3">
+        <img src="image4.png" alt="Image 4">
+        <img src="image5.png" alt="Image 5">
+        <img src="image6.png" alt="Image 6">
+        <img src="image8.png" alt="Image 8">
+        <img src="image19.png" alt="Image 19">
+        <img src="image20.png" alt="Image 20">
+        <img src="image21.png" alt="Image 21">
+        <img src="image22.png" alt="Image 22">
+        <img src="image23.png" alt="Image 23">
+        <img src="image24.png" alt="Image 24">
+        <img src="image25.png" alt="Image 25">
+        <img src="image26.png" alt="Image 26">
+        <img src="image27.png" alt="Image 27">
+        <img src="image28.png" alt="Image 28">
+        <img src="image29.png" alt="Image 29">
+        <img src="image30.png" alt="Image 30">
+        <img src="image37.png" alt="Image 37">
+    </div>
     <div class="message">
         Happy Birthday Zahra!
     </div>
