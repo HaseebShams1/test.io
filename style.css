@@ -46,6 +46,22 @@ button {
     cursor: pointer;
     border-radius: 8px;
 }
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: white;
+    opacity: 0.5;
+    border-radius: 50%;
+    animation: twinkle 3s infinite alternate ease-in-out;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
 
 /* Confetti for Surprise Page */
 .confetti {
