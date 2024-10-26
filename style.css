@@ -1,0 +1,48 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #ffccd5; /* Matte pink */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+#yes-btn {
+    background-color: #ff9aa2;
+    color: white;
+}
+
+#no-btn {
+    background-color: #ff9aa2;
+    color: white;
+    position: relative;
+}
+
+#no-btn:hover {
+    position: absolute;
+    left: calc(50% - 75px);
+    transform: translateX(100px); /* Adjust distance to make it "run away" */
+}
