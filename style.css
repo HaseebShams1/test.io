@@ -27,8 +27,8 @@ body, html {
 /* LED text effect for the message */
 #led-text2 {
     font-size: 4rem; /* Font size for the special message */
-    color: ##ff0000;  /* Matte pink color */
-    text-shadow: 0 0 2px ##ff0000, 0 0 6px ##ff0000, 0 0 4px #ff6f91; /* Shadow effect */
+    color: #C72C41;  /* Matte pink color */
+    text-shadow: 0 0 2px #C72C41, 0 0 6px #C72C41, 0 0 4px #ff6f91; /* Shadow effect */
 }
 
 @keyframes led-animation {
