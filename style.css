@@ -1,78 +1,61 @@
-/* Galaxy Background for both pages */
+/* Basic page styling */
 body, html {
-    height: 100%;
     margin: 0;
+    padding: 0;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #000;
+    color: #fff;
     font-family: Arial, sans-serif;
-    background: url('images/galaxy-bg.jpg') no-repeat center center fixed;
-    background-size: cover;
-    overflow: hidden;
 }
 
-/* Star Message Styling */
-h1#starMessage {
-    font-size: 3rem;
-    color: white;
-    opacity: 0;
-    animation: appear 3s forwards, sparkle 1s infinite alternate ease-in-out;
-}
-
-/* Message Appear Animation */
-@keyframes appear {
-    0% { opacity: 0; transform: scale(0.5); }
-    100% { opacity: 1; transform: scale(1); }
-}
-
-/* Subtle Sparkle Effect */
-@keyframes sparkle {
-    from { filter: brightness(1); }
-    to { filter: brightness(1.5); }
-}
-
-/* Buttons */
-.buttons {
-    margin-top: 30px;
+/* Container styling */
+.container {
     text-align: center;
 }
 
+/* LED text effect */
+#led-text {
+    font-size: 3rem;
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    animation: led-animation 1s infinite alternate;
+}
+
+@keyframes led-animation {
+    from {
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 20px #ff0000;
+    }
+    to {
+        text-shadow: 0 0 5px #ff3333, 0 0 15px #ff3333, 0 0 30px #ff3333;
+    }
+}
+
+/* Button styling */
+.buttons {
+    margin-top: 20px;
+}
+
 button {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
-    background-color: #ff9aa2;
+    margin: 10px;
     color: white;
+    background-color: #333;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
-    border-radius: 8px;
-}
-.star {
-    position: absolute;
-    width: 2px;
-    height: 2px;
-    background: white;
-    opacity: 0.5;
-    border-radius: 50%;
-    animation: twinkle 3s infinite alternate ease-in-out;
+    transition: background-color 0.3s ease;
 }
 
-@keyframes twinkle {
-    0% { opacity: 0.3; }
-    50% { opacity: 1; }
-    100% { opacity: 0.3; }
+button:hover {
+    background-color: #555;
 }
 
-
-/* Confetti for Surprise Page */
-.confetti {
-    position: fixed;
-    width: 8px;
-    height: 8px;
-    top: -10px;
-    border-radius: 50%;
-    animation: fall 5s linear infinite;
-}
-
-@keyframes fall {
-    to { transform: translateY(100vh) rotate(720deg); }
+/* No button movement */
+#no-btn {
+    position: relative;
+    transition: transform 0.3s ease;
 }
