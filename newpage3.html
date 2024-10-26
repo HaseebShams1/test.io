@@ -6,18 +6,19 @@
     <title>Happy Birthday!</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        body {
+            body {
             margin: 0;
             padding: 0;
-            height: 100vh; /* Full viewport height */
-            background-image: url('cake.png'); /* Path to your background image */
-            background-size: cover; /* Cover the entire viewport */
-            background-position: center; /* Center the image */
-            display: flex; /* Flexbox to center text */
-            justify-content: center; /* Center horizontally */
-            align-items: center; /* Center vertically */
-            color: white; /* Text color */
-            font-family: 'Arial', sans-serif; /* Font style */
+            height: 100vh; /* Full height of the viewport */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('your-image.png'); /* Replace with your image file */
+            background-size: contain; /* Fix the size of the background image */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent repeating */
+            background-attachment: fixed; /* Keep the background fixed */
+            overflow: hidden; /* Prevent scrollbars */
         }
         
         h1 {
