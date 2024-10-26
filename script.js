@@ -2,6 +2,9 @@
 function goToNewPage() {
     window.location.href = "newpage.html";
 }
+function goToNewPage2() {
+    window.location.href = "newpage2.html";
+}
 
 // Moves the "No" button away when hovered
 function moveNoButton() {
