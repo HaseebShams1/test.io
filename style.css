@@ -1,3 +1,4 @@
+/* General Styles */
 body, html {
     height: 100%;
     margin: 0;
@@ -6,15 +7,30 @@ body, html {
     align-items: center;
     font-family: Arial, sans-serif;
     background-color: #ffccd5; /* Matte pink */
+    overflow: hidden;
+    cursor: url('heart-cursor.png'), auto;
 }
 
 .container {
     text-align: center;
 }
 
+#nameInput {
+    padding: 10px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
 h1 {
     font-size: 3rem;
     color: #333;
+}
+
+#specialMessage {
+    font-size: 1.25rem;
+    margin: 20px 0;
+    color: #555;
 }
 
 .buttons {
@@ -33,6 +49,7 @@ button {
 #yes-btn {
     background-color: #ff9aa2;
     color: white;
+    animation: heartbeat 1s infinite;
 }
 
 #no-btn {
@@ -44,5 +61,32 @@ button {
 #no-btn:hover {
     position: absolute;
     left: calc(50% - 75px);
-    transform: translateX(100px); /* Adjust distance to make it "run away" */
+    transform: translateX(100px);
+}
+
+/* Slideshow */
+.slideshow {
+    margin-top: 30px;
+}
+
+.slideshow img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#caption {
+    font-size: 1.25rem;
+    color: #444;
+    margin-top: 10px;
+}
+
+/* Heartbeat Animation */
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
 }
