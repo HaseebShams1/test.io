@@ -16,19 +16,19 @@ body, html {
     text-align: center;
 }
 
-/* LED text effect with matte pink */
+/* LED text effect for name */
 #led-text {
-    font-size: 8rem;
-    color: #d5006d; /* Matte pink color */
-    text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Slightly brighter shadow for effect */
+    font-size: 8rem; /* Larger font size for the name */
+    color: #d5006d;  /* Matte pink color */
+    text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Shadow effect */
     animation: led-animation 1s infinite alternate;
 }
 
+/* LED text effect for the message */
 #led-text2 {
-    font-size: 4rem;
-    color: #d5006d; /* Matte pink color */
-    text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Slightly brighter shadow for effect */
-    
+    font-size: 4rem; /* Font size for the special message */
+    color: #d5006d;  /* Matte pink color */
+    text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Shadow effect */
 }
 
 @keyframes led-animation {
