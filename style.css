@@ -28,7 +28,6 @@ body, html {
     font-size: 4rem;
     color: #d5006d; /* Matte pink color */
     text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Slightly brighter shadow for effect */
-    animation: led-animation 1s infinite alternate;
     
 }
 
