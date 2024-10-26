@@ -43,7 +43,7 @@ button {
     padding: 10px 20px;
     margin: 40px;
     color: white;
-    background-color: #333;
+    background-color: #d5006d;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -51,7 +51,7 @@ button {
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #d5006d;
 }
 
 /* No button movement */
