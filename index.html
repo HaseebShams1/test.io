@@ -8,11 +8,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Happy Birthday, My Love!</h1>
+        <input type="text" id="nameInput" placeholder="Enter your name" oninput="updateGreeting()" />
+        <h1 id="greeting">Happy Birthday!</h1>
+        
+        <p id="specialMessage">Today is your special day, and I can’t wait to celebrate with you!</p>
+        
+        <!-- Buttons -->
         <div class="buttons">
-            <button id="yes-btn" onclick="location.href='newpage.html'">Yes</button>
+            <button id="yes-btn" onclick="goToSurprisePage()">Yes</button>
             <button id="no-btn">No</button>
         </div>
+
+        <!-- Interactive Slideshow -->
+        <div class="slideshow">
+            <img id="slideImg" src="images/photo1.jpg" alt="Memories together">
+            <div id="caption">Our First Adventure</div>
+        </div>
+        
+        <audio id="backgroundMusic" src="audio/birthday-song.mp3" autoplay loop></audio>
+
     </div>
     <script src="script.js"></script>
 </body>
