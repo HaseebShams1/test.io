@@ -3,37 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Zahra!</title>
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
             padding: 0;
-            height: 100vh; /* Full height of the viewport */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #f8f8f8; /* Fallback color */
-            overflow: hidden; /* Prevent scrollbars */
-            background-image: url('image1.png'), url('image2.png'), url('image3.png'), url('image4.png'), url('image5.png'),
-                              url('image6.png'),  url('image8.png'), url('image19.png'), url('image20.png'),  url('img37.png')
-                              url('image21.png'), url('image22.png'), url('image23.png'), url('image24.png'), url('image25.png'),
-                              url('image26.png'), url('image27.png'), url('imag28.png'), url('image29.png'), url('image30.png');
-            background-size: cover; /* Scale background images */
-            background-repeat: no-repeat; /* Prevent images from repeating */
+            height: 100vh; /* Full viewport height */
+            background-image: url('cake.png'); /* Path to your background image */
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center; /* Center the image */
+            display: flex; /* Flexbox to center text */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: white; /* Text color */
+            font-family: 'Arial', sans-serif; /* Font style */
         }
-        .message {
-            position: relative; /* Position message above the background */
-            color: white;
-            text-align: center;
-            font-size: 2rem;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Shadow for better readability */
-            z-index: 1; /* Ensure message is on top */
+        
+        h1 {
+            font-size: 6rem; /* Large text size */
+            text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8); /* Shadow effect for depth */
+            animation: float 3s ease-in-out infinite; /* Floating effect animation */
+            text-align: center; /* Center the text */
+            margin: 0; /* Remove default margin */
+        }
+
+        /* Animation keyframes for floating effect */
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-    <div class="message">
-        Happy Birthday Zahra!
-    </div>
+    <h1>Happy Birthday!</h1>
 </body>
 </html>
