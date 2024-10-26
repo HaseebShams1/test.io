@@ -24,30 +24,25 @@ function updateGreeting() {
 
 // Go to Surprise Page
 function goToSurprisePage() {
-    confettiAnimation();
+    launchConfetti();
     setTimeout(() => {
         location.href = 'newpage.html';
-    }, 2000);
+    }, 3000);  // Adjust delay to enjoy confetti longer
 }
 
-// Slideshow
-function nextSlide() {
-    currentSlide = (currentSlide + 1) % slides.length;
-    slideImg.src = slides[currentSlide].src;
-    caption.textContent = slides[currentSlide].caption;
-}
-setInterval(nextSlide, 3000);
-
-// Confetti Animation
-function confettiAnimation() {
-    const confettiCount = 150;
+function launchConfetti() {
+    const confettiCount = 100;  // Adjust for a satisfying confetti shower
     const confettiColors = ['#ff9aa2', '#ffb7b2', '#ffdac1'];
+
     for (let i = 0; i < confettiCount; i++) {
         const confetti = document.createElement('div');
         confetti.classList.add('confetti');
-        confetti.style.left = `${Math.random() * 100}%`;
+        confetti.style.left = `${Math.random() * 100}vw`;
         confetti.style.backgroundColor = confettiColors[Math.floor(Math.random() * confettiColors.length)];
         document.body.appendChild(confetti);
+
+        // Remove confetti after animation
         setTimeout(() => confetti.remove(), 5000);
     }
 }
+
