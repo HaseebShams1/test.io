@@ -18,9 +18,9 @@ body, html {
 
 /* LED text effect with matte pink */
 #led-text {
-    font-size: 3rem;
+    font-size: 8rem;
     color: #d5006d; /* Matte pink color */
-    text-shadow: 0 0 5px #d5006d, 0 0 10px #d5006d, 0 0 15px #ff6f91; /* Slightly brighter shadow for effect */
+    text-shadow: 0 0 10px #d5006d, 0 0 20px #d5006d, 0 0 30px #ff6f91; /* Slightly brighter shadow for effect */
     animation: led-animation 1s infinite alternate;
 }
 
